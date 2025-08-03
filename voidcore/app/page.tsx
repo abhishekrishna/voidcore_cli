@@ -6,12 +6,12 @@ import { ProjectsSection } from "@/components/home/projects_section";
 
 export default function Home() {
   return (
-    <main className="bg-neutral-950 text-white">
+    <main className="bg-neutral-900 text-white bg-gradient-to-r from-pink-500/30 to-blue-500/30 ">
       <Header />
-      <BackgroundCode />
+      {/* <BackgroundCode /> */}
       <Hero />
       <FeaturesSection />
-      <ProjectsSection />
+      {/* <ProjectsSection /> */}
     </main>
   )
 }

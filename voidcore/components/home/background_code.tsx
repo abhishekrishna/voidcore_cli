@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 export function BackgroundCode() {
   return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+    <div className="absolute inset-0 overflow-hidden pointer-events-none ">
       {[...Array(100)].map((_, i) => (
         <motion.span
           key={i}
@@ -15,7 +15,8 @@ export function BackgroundCode() {
             transform: `rotate(${Math.random() * 360}deg)`
           }}
         >
-          {`<code-${i} />`}
+          {`<voidcore-${i} />`}
+          {/* {`<voidcore-${i} />`} */}
         </motion.span>
       ))}
     </div>
