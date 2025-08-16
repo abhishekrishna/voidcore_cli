@@ -1,0 +1,29 @@
+{
+  "name": "voidcore",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/inquirer": "^9.0.8",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^24.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@nestjs/mapped-types": "^2.1.0",
+    "commander": "^14.0.0",
+    "fs-extra": "^11.3.0",
+    "inquirer": "^12.9.0",
+    "js-yaml": "^4.1.0",
+    "prompts": "^2.4.2"
+  }
+}
