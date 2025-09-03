@@ -1,9 +1,5 @@
-Nice ⚡ so you want a README.md for your VoidCore CLI (the scaffolding engine you told me about earlier — generates modular backends with CRUD, auth, DB, pipelines, etc.).
-Here’s a professional, developer-first README draft:
 
-⸻
-
-VoidCore CLI 🚀
+voidcore cli 🚀
 
 Scaffold clean, modular backend APIs in seconds.
 VoidCore CLI is a developer-first scaffolding engine that generates backend APIs with CRUD, auth, DB models, and pipelines — production-ready and framework-agnostic.
