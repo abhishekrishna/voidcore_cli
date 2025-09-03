@@ -4,7 +4,6 @@ voidcore cli 🚀
 Scaffold clean, modular backend APIs in seconds.
 VoidCore CLI is a developer-first scaffolding engine that generates backend APIs with CRUD, auth, DB models, and pipelines — production-ready and framework-agnostic.
 
-⸻
 
 ✨ Features
 	•	⚡ One command scaffolding → Generate backend APIs instantly.
@@ -13,9 +12,8 @@ VoidCore CLI is a developer-first scaffolding engine that generates backend APIs
 	•	📦 YAML-driven → Define models once, auto-generate APIs, CRUD, and DB migrations.
 	•	🔐 Auth built-in → Plug-and-play authentication modules.
 	•	🔄 Pipelines & Jobs → Background tasks, retries, CRON ready.
-	•	🖥 Dashboard (optional) → Manage deploys, pipelines, and configs visually.
-
-⸻
+	•	🖥 Dashboard (optional) → Manage deploys, pipelines, and configs visually
+ 
 
 📦 Installation
 
@@ -23,8 +21,6 @@ npm install -g voidcore-cli
 # or
 yarn global add voidcore-cli
 
-
-⸻
 
 🚀 Quick Start
 	1.	Initialize project
@@ -61,8 +57,6 @@ voidcore generate api
 voidcore dev
 
 
-⸻
-
 🛠 Commands
 
 Command	Description
@@ -74,7 +68,6 @@ voidcore build	Build production-ready backend
 voidcore deploy	Deploy using Docker or cloud pipelines
 
 
-⸻
 
 ⚙️ Supported Frameworks
 	•	Node.js → NestJS, Express
@@ -82,7 +75,7 @@ voidcore deploy	Deploy using Docker or cloud pipelines
 	•	PHP → Laravel
 	•	(more coming soon…)
 
-⸻
+
 
 📖 Example
 
@@ -93,7 +86,6 @@ voidcore dev
 
 Open http://localhost:3000 → You’ll have a full CRUD API running with clean modular code.
 
-⸻
 
 🧩 Roadmap
 	•	GraphQL support
@@ -101,19 +93,17 @@ Open http://localhost:3000 → You’ll have a full CRUD API running with clean 
 	•	SaaS dashboard for deploys + monitoring
 	•	Cloud-native templates (AWS, GCP, Azure)
 
-⸻
 
 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 Feel free to open a PR or start a discussion.
 
-⸻
 
 📜 License
 
 MIT © Void Core Technologies
 
-⸻
+
 
 👉 This keeps it developer-first, like Vercel or Prisma style docs — fast to read, trust-building, and marketable.
