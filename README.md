@@ -6,13 +6,20 @@ VoidCore CLI is a developer-first scaffolding engine that generates backend APIs
 
 
 ✨ Features
-	•	⚡ One command scaffolding → Generate backend APIs instantly.
-	•	🗂 Modular structure → Clean, maintainable code out of the box.
-	•	🛠 Any stack, any DB → Works with NestJS, FastAPI, Django, Express, Laravel, and more.
-	•	📦 YAML-driven → Define models once, auto-generate APIs, CRUD, and DB migrations.
-	•	🔐 Auth built-in → Plug-and-play authentication modules.
-	•	🔄 Pipelines & Jobs → Background tasks, retries, CRON ready.
-	•	🖥 Dashboard (optional) → Manage deploys, pipelines, and configs visually
+•	⚡ One command scaffolding → Generate backend APIs instantly.
+
+•	🗂 Modular structure → Clean, maintainable code out of the box.
+
+•	🛠 Any stack, any DB → Works with NestJS, FastAPI, Django, Express, Laravel, and more.
+
+•	📦 YAML-driven → Define models once, auto-generate APIs, CRUD, and DB migrations.
+
+•	🔐 Auth built-in → Plug-and-play authentication modules.
+
+•	🔄 Pipelines & Jobs → Background tasks, retries, CRON ready.
+
+•	🖥 Dashboard (optional) → Manage deploys, pipelines, and configs visually
+
  
 
 📦 Installation
