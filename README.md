@@ -1,36 +1,116 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+voidcore cli 🚀
 
-First, run the development server:
+Scaffold clean, modular backend APIs in seconds.
+VoidCore CLI is a developer-first scaffolding engine that generates backend APIs with CRUD, auth, DB models, and pipelines — production-ready and framework-agnostic.
 
-```bash
-npm run dev
+
+✨ Features
+•	⚡ One command scaffolding → Generate backend APIs instantly.
+
+•	🗂 Modular structure → Clean, maintainable code out of the box.
+
+•	🛠 Any stack, any DB → Works with NestJS, FastAPI, Django, Express, Laravel, and more.
+
+•	📦 YAML-driven → Define models once, auto-generate APIs, CRUD, and DB migrations.
+
+•	🔐 Auth built-in → Plug-and-play authentication modules.
+
+•	🔄 Pipelines & Jobs → Background tasks, retries, CRON ready.
+
+•	🖥 Dashboard (optional) → Manage deploys, pipelines, and configs visually
+
+ 
+
+📦 Installation
+
+npm install -g voidcore-cli
 # or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+yarn global add voidcore-cli
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🚀 Quick Start
+	1.	Initialize project
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+voidcore init my-app
+cd my-app
 
-## Learn More
+	2.	Define models in schema.yaml
 
-To learn more about Next.js, take a look at the following resources:
+models:
+  User:
+    id: int
+    name: string
+    email: string
+    password: string
+  Post:
+    id: int
+    title: string
+    content: text
+    author: relation(User)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+	3.	Generate backend
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+voidcore generate api
 
-## Deploy on Vercel
+👉 This generates:
+	•	REST/GraphQL endpoints
+	•	CRUD controllers
+	•	DB migrations
+	•	Auth module
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+	4.	Run the server
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+voidcore dev
+
+
+🛠 Commands
+
+Command	Description
+voidcore init <name>	Initialize a new project
+voidcore generate api	Generate CRUD + API endpoints from schema
+voidcore generate auth	Add auth module (JWT, OAuth, etc.)
+voidcore dev	Run project in dev mode
+voidcore build	Build production-ready backend
+voidcore deploy	Deploy using Docker or cloud pipelines
+
+
+
+⚙️ Supported Frameworks
+	•	Node.js → NestJS, Express
+	•	Python → FastAPI, Django
+	•	PHP → Laravel
+	•	(more coming soon…)
+
+
+
+📖 Example
+
+voidcore init blog-app
+cd blog-app
+voidcore generate api
+voidcore dev
+
+Open http://localhost:3000 → You’ll have a full CRUD API running with clean modular code.
+
+
+🧩 Roadmap
+	•	GraphQL support
+	•	gRPC & WebSockets generation
+	•	SaaS dashboard for deploys + monitoring
+	•	Cloud-native templates (AWS, GCP, Azure)
+
+
+🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+Feel free to open a PR or start a discussion.
+
+
+📜 License
+
+MIT © Void Core Technologies
+
+
+
+👉 This keeps it developer-first, like Vercel or Prisma style docs — fast to read, trust-building, and marketable.
