@@ -1,0 +1,34 @@
+project:
+  name: ecommerce
+  language: nestjs
+  database: mongodb
+
+resources:
+  - name: user
+    fields:
+      - name: username
+        type: string
+        required: true
+        unique: true
+      - name: email
+        type: string
+        required: true
+        unique: true
+      - name: createdAt
+        type: date
+        default: now
+    relations:
+      - type: hasMany
+        target: order
+
+  - name: order
+    fields:
+      - name: total
+        type: number
+        required: true
+      - name: status
+        type: string
+        enum: [pending, paid, shipped]
+      - name: userId
+        type: objectId
+        ref: user
